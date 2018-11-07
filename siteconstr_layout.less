@@ -1,0 +1,57 @@
+.ready-to-join {
+    width: 100%;
+    &__container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 1024px;
+        margin: 0 auto;
+        padding: 32px 0;
+        color: white;
+        &--center {
+            align-items: center;
+            flex-direction: column;
+            .ready-to-join__button-wrapper {
+                margin-top: 0;
+                margin-left: 0;
+            }
+        }
+    }
+    &__content {
+        width: 80%;
+        margin-bottom: 16px;
+    }
+    &__title {
+        margin: 0;
+        font-size: 26px;
+        font-family: Rubik;
+        font-weight: normal;
+        line-height: 1.23;
+        &--center {
+            text-align: center;
+        }
+    }
+    &__description {
+        margin: 0;
+        font-size: 17px;
+        font-family: "Source Sans Pro";
+        line-height: 1.41;
+        &--center {
+            text-align: center;
+        }
+    }
+    &__button {
+        margin-left: 16px;
+        white-space: nowrap;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    &__button-wrapper {
+        display: flex;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+}
+@import "./ReadyToJoin.tablet.less";
+@import "./ReadyToJoin.mobile.less";
